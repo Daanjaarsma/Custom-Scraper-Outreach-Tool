@@ -1,10 +1,11 @@
 {
-  "actorSpecification": 1,
+  "actorOutputSchemaVersion": 1,
   "fields": {
     "leadId": { "type": "string" },
     "website": { "type": "string" },
     "name": { "type": "string" },
     "city": { "type": "string" },
+    "address": { "type": "string" },
     "primaryEmail": { "type": "string" },
     "phone": { "type": "string" },
     "isReachable": { "type": "boolean" },
