@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "leadId": { "type": "string" },
+    "website": { "type": "string" },
+    "name": { "type": "string" },
+    "city": { "type": "string" },
+    "primaryEmail": { "type": "string" },
+    "phone": { "type": "string" },
+    "isReachable": { "type": "boolean" },
+    "discardReason": { "type": "string" }
+  }
+}

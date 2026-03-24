@@ -1,0 +1,37 @@
+{
+  "title": "Cold Outreach Email Enricher Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "leadsJson": {
+      "title": "Leads JSON",
+      "type": "array",
+      "description": "Array van leads met leadId, website, name, phone, city velden",
+      "editor": "json"
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "type": "integer",
+      "description": "Aantal parallelle browsers",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "perSiteTimeoutSec": {
+      "title": "Timeout per pagina (sec)",
+      "type": "integer",
+      "description": "Timeout per pagina navigatie",
+      "default": 5,
+      "minimum": 3,
+      "maximum": 15
+    },
+    "perLeadHardTimeoutSec": {
+      "title": "Hard timeout per lead (sec)",
+      "type": "integer",
+      "description": "Maximale tijd per lead",
+      "default": 25,
+      "minimum": 10,
+      "maximum": 60
+    }
+  }
+}

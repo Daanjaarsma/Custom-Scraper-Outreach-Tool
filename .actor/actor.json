@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "praedix-cold-outreach-enricher",
+  "title": "Praedix Cold Outreach Email Enricher",
+  "description": "Scrapt email-adressen en telefoon van bedrijfswebsites voor e-commerce en recruitment leads. Geoptimaliseerd voor snelheid en nauwkeurigheid.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-playwright"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
