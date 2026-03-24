@@ -9,9 +9,42 @@
     "templateId": "python-playwright"
   },
   "input": "./input_schema.json",
-  "output": "./output_schema.json",
   "storages": {
-    "dataset": "./dataset_schema.json"
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Enriched Leads",
+          "transformation": {
+            "fields": [
+              "leadId",
+              "name",
+              "website",
+              "primaryEmail",
+              "phone",
+              "city",
+              "address",
+              "isReachable",
+              "discardReason"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "leadId": { "label": "Lead ID", "format": "text" },
+              "name": { "label": "Bedrijf", "format": "text" },
+              "website": { "label": "Website", "format": "link" },
+              "primaryEmail": { "label": "Email", "format": "text" },
+              "phone": { "label": "Telefoon", "format": "text" },
+              "city": { "label": "Stad", "format": "text" },
+              "address": { "label": "Adres", "format": "text" },
+              "isReachable": { "label": "Bereikbaar", "format": "boolean" },
+              "discardReason": { "label": "Reden overgeslagen", "format": "text" }
+            }
+          }
+        }
+      }
+    }
   },
   "dockerfile": "../Dockerfile"
 }
